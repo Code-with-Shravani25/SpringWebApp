@@ -19,7 +19,7 @@ public class UserController {
 		return "userForm";
 	}
 
-	@RequestMapping(value = "/regUser.htm", method = RequestMethod.POST)
+	@RequestMapping(value = "/regUser.html", method = RequestMethod.POST)
 	public String regUser(Model model, @ModelAttribute("user") User u) {
 		model.addAttribute("user", u);
 		return "display";
